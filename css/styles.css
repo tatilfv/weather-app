@@ -1,0 +1,82 @@
+h1 {
+  padding: 10px 20px 0;
+  font-size: 35px;
+}
+h2 {
+  font-size: 70px;
+}
+hr {
+  margin: 0 auto;
+  opacity: 0.4;
+}
+.container {
+  margin-top: 100px;
+}
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #f7feff;
+  padding: 40px 25px 10px;
+  border: none;
+  background: rgb(173, 202, 230);
+  background: linear-gradient(
+    151deg,
+    rgb(180, 206, 230) 7%,
+    rgb(95, 143, 188) 30%,
+    rgb(115, 173, 227) 59%,
+    rgb(95, 155, 207) 83%
+  );
+}
+.enter-city {
+  font-size: 15px;
+}
+.search {
+  background: #608a51f1;
+  border: none;
+}
+.search:hover {
+  background: #94e977f1;
+  opacity: 0.85;
+}
+.current {
+  background: #2b5b9ac2;
+  border: none;
+}
+.current:hover {
+  background: #5d8fcfc2;
+  opacity: 0.85;
+}
+.info {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 3px 2px 4px rgb(107, 111, 116, 0.5);
+}
+.description {
+  font-size: 15px;
+  font-style: italic;
+}
+.precipit {
+  font-size: 18px;
+  opacity: 0.8;
+  color: rgba(102, 131, 155, 0.862);
+  text-shadow: none;
+}
+.degrees {
+  font-size: 35px;
+  position: relative;
+  bottom: 20px;
+  font-style: italic;
+}
+.celsius,
+.fahrenheit {
+  text-decoration: none;
+  color: #f7feff;
+}
+.celsius:hover,
+.fahrenheit:hover {
+  color: #507bb3c2;
+}
+.weekend {
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+}
