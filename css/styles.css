@@ -30,22 +30,7 @@ hr {
 .enter-city {
   font-size: 15px;
 }
-.search {
-  background: #608a51f1;
-  border: none;
-}
-.search:hover {
-  background: #94e977f1;
-  opacity: 0.85;
-}
-.current {
-  background: #2b5b9ac2;
-  border: none;
-}
-.current:hover {
-  background: #5d8fcfc2;
-  opacity: 0.85;
-}
+
 .info {
   font-family: "Poppins", sans-serif;
   text-shadow: 3px 2px 4px rgb(107, 111, 116, 0.5);
