@@ -30,7 +30,6 @@ hr {
 .enter-city {
   font-size: 15px;
 }
-
 .info {
   font-family: "Poppins", sans-serif;
   text-shadow: 3px 2px 4px rgb(107, 111, 116, 0.5);
@@ -64,4 +63,10 @@ hr {
   margin: 0 auto;
   font-size: 18px;
   text-align: center;
+}
+
+.linkGit {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
 }
