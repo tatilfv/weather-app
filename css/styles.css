@@ -38,11 +38,10 @@ hr {
   font-size: 15px;
   font-style: italic;
 }
-.precipit {
+.humidity {
   font-size: 18px;
   opacity: 0.8;
-  color: rgba(102, 131, 155, 0.862);
-  text-shadow: none;
+  color: rgba(254, 255, 255, 0.862);
 }
 .degrees {
   font-size: 35px;
