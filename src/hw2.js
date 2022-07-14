@@ -33,6 +33,30 @@ function showWeather(response) {
 
   let weatherDescription = document.querySelector("#weather-description");
   weatherDescription.innerHTML = response.data.weather[0].main;
+
+  let humidity = document.querySelector("#humidity-description");
+  humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
+
+  let windSpeed = document.querySelector("#wind-description");
+  let wind = Math.round(response.data.wind.speed);
+  windSpeed.innerHTML = `Wind: ${wind} km/h`;
+
+  document
+    .querySelector(".sunFlower")
+    .setAttribute("alt", response.data.weather[0].description);
+  if (
+    response.data.weather[0].icon === "01d" ||
+    response.data.weather[0].icon === "01n"
+  ) {
+    document.querySelector(".sunFlower").setAttribute("src", `images/sun.png`);
+  } else {
+    document
+      .querySelector(".sunFlower")
+      .setAttribute(
+        "src",
+        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      );
+  }
 }
 
 function search(event) {
@@ -47,16 +71,12 @@ function convertToFahrenheit(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = 78;
 }
+
 function convertToCelsuis(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = 26;
 }
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsuis);
 
 function searchCity(city) {
   let apiKey = "70cca878601436ccf9abe6701485d34f";

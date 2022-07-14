@@ -1,3 +1,6 @@
+.container {
+  margin-top: 100px;
+}
 h1 {
   padding: 10px 20px 0;
   font-size: 35px;
@@ -9,9 +12,7 @@ hr {
   margin: 0 auto;
   opacity: 0.4;
 }
-.container {
-  margin-top: 100px;
-}
+
 .card {
   max-width: 600px;
   margin: 0 auto;
@@ -43,6 +44,9 @@ hr {
   opacity: 0.8;
   color: rgba(254, 255, 255, 0.862);
 }
+li {
+  list-style: none;
+}
 .degrees {
   font-size: 35px;
   position: relative;
@@ -56,7 +60,7 @@ hr {
 }
 .celsius:hover,
 .fahrenheit:hover {
-  color: #507bb3c2;
+  color: #b0cef5e1;
 }
 .weekend {
   margin: 0 auto;
