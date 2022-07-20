@@ -122,12 +122,6 @@ function search(event) {
   cityElement.innerHTML = cityInput.value;
 }
 
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 78;
-}
-
 function convertToCelsuis(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
